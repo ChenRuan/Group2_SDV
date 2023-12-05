@@ -450,8 +450,8 @@
 "Assets/Scripts/M2MqttUnity/Examples/Scripts/M2MqttUnityTest.cs"
 "Assets/Scripts/M2MqttUnity/Scripts/BrokerSettings.cs"
 "Assets/Scripts/M2MqttUnity/Scripts/M2MqttUnityClient.cs"
-"Assets/Scripts/mqttController.cs"
 "Assets/Scripts/mqttManager.cs"
+"Assets/Scripts/RoomController.cs"
 -langversion:9.0
 
 /deterministic

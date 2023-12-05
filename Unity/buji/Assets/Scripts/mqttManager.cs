@@ -145,7 +145,6 @@ public class mqttManager : M2MqttUnityClient
         {
          client.Subscribe(new string[] { item }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });   
         }
-        
     }
 
     protected override void UnsubscribeTopics()

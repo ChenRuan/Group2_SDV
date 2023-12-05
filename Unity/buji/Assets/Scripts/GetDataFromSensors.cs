@@ -13,10 +13,11 @@ public class GetDataFromSensors : MonoBehaviour
     public GameObject DataOutput;
     private SensorsRoot data;
 
+
     void Start()
     {
-        // get data every 5 minutes
-        InvokeRepeating("GetData", 0f, 300f);
+        // get data every 1 minutes
+        InvokeRepeating("GetData", 0f, 60f);
     }
     void Update()
     {
@@ -49,15 +50,6 @@ public class GetDataFromSensors : MonoBehaviour
                 Debug.LogError($"Error: {request.error}");
             }
         }
-        // 计算总数
-        if (data != null)
-        {
-            OccupiedStatusCount counts = data.CountOccupiedStatus("Connected Environments");
-            Debug.Log($"Total sensors: {counts.total}");
-            Debug.Log($"Occupied=false sensors: {counts.occupiedFalse}");
-        } else{
-            Debug.Log($"Data NULL");
-        }
     }
 
     static void QuerySensorData(SensorsRoot data, string sensorId)
@@ -69,7 +61,7 @@ public class GetDataFromSensors : MonoBehaviour
                 if (map.sensors != null && map.sensors.TryGetValue(sensorId, out SensorData sensorData))
                 {
                     // 找到了传感器数据
-                    Debug.Log(sensorData);
+                    //Debug.Log(sensorData);
                     return;
                 }
             }
@@ -77,6 +69,41 @@ public class GetDataFromSensors : MonoBehaviour
 
         // 未找到传感器数据
         Debug.Log($"Sensor {sensorId} not found.");
+    }
+
+    public OccupiedStatusCount CountOccupiedStatus(string description1Condition)
+    {
+        int total = 0;
+        int occupiedFalse = 0;
+
+        if (data != null)
+        {
+            foreach (var map in data.maps)
+            {
+                if (map.sensors != null)
+                {
+                    foreach (var sensor in map.sensors.Values)
+                    {
+                        if (!sensor.occupied && sensor.description_1 == description1Condition)
+                        {
+                            occupiedFalse++;
+                            total++;
+                        }
+                        else if (sensor.description_1 == description1Condition)
+                        {
+                            total++;
+                        }
+                    }
+                }
+            }
+        }
+
+        OccupiedStatusCount result;
+        result.total = total;
+        result.occupiedFalse = occupiedFalse;
+        Debug.Log("result"+total +occupiedFalse);
+
+        return result;
     }
 }
 
@@ -132,35 +159,4 @@ public class SensorsRoot
     public string survey_id ;
     public string survey_name ;
     public string most_recent_timestamp ;
-    public OccupiedStatusCount CountOccupiedStatus(string description1Condition)
-    {
-        int total = 0;
-        int occupiedFalse = 0;
-
-        if (maps != null)
-        {
-            foreach (var map in maps)
-            {
-                if (map.sensors != null)
-                {
-                    foreach (var sensor in map.sensors.Values)
-                    {
-                        if (!sensor.occupied && sensor.description_1 == description1Condition)
-                        {
-                            occupiedFalse++;
-                            total++;
-                        } else if(sensor.description_1 == description1Condition){
-                            total++;
-                        }
-                    }
-                }
-            }
-        }
-
-        OccupiedStatusCount result;
-        result.total = total;
-        result.occupiedFalse = occupiedFalse;
-
-        return result;
-    }
 }

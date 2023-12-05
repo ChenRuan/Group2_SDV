@@ -383,7 +383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777649992}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ec98f3fb84dd3f49943edfc512b918a, type: 3}
   m_Name: 
@@ -402,13 +402,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brokerAddress: mqtt.cetools.org
-  brokerPort: 1883
+  brokerPort: 1884
   isEncrypted: 0
   connectionDelay: 500
   timeoutOnConnection: 30000
   autoConnect: 1
-  mqttUserName: 
-  mqttPassword: 
+  mqttUserName: student
+  mqttPassword: ce2021-mqtt-forget-whale
   topicSubscribe:
   - UCL/OPSEBO/#
 --- !u!1 &1493478015
@@ -472,13 +472,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accb0cea5f0de964b9b99aab0a0884c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: Controller 1
+  RoomName: room
+  RoomDescription: Connected Environments
+  FreeSeats: 0
+  TotalSeats: 0
+  Temperature: 20.5
   tag_mqttManager: Script
   _eventSender: {fileID: 777649996}
+  _getSensors: {fileID: 777649995}
   KnownKey1: 107
-  KnownKey2: VAV4
-  KnownKey3: FCV
+  KnownKey2: Room
+  KnownKey3: TPS
   KnownKey4: Value
+  PublishTopic: student/CASA0019/G2/DATA/
 --- !u!4 &1683495507
 Transform:
   m_ObjectHideFlags: 0
