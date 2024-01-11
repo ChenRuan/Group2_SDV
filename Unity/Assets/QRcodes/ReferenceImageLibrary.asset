@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4679508527403242430
+  m_GuidHigh: 9719188009169566394
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4822750675426482880
+      m_GuidHigh: 11000053129036516284
+    m_SerializedTextureGuid:
+      m_GuidLow: 5459488665182812920
+      m_GuidHigh: 4066634292326221194
+    m_Size: {x: 0.0267, y: 0.0267}
+    m_SpecifySize: 1
+    m_Name: GroundFloor
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5162529459457658665
+      m_GuidHigh: 8167374743168140448
+    m_SerializedTextureGuid:
+      m_GuidLow: 9391304577908872877
+      m_GuidHigh: 15018611157561102778
+    m_Size: {x: 0.0267, y: 0.0267}
+    m_SpecifySize: 1
+    m_Name: FirstFloor
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5260840931858660846
+      m_GuidHigh: 3673757521865609358
+    m_SerializedTextureGuid:
+      m_GuidLow: 16723006578069589251
+      m_GuidHigh: 14668177885435776635
+    m_Size: {x: 0.0267, y: 0.0267}
+    m_SpecifySize: 1
+    m_Name: SecondFloor
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5644993189713440881
+      m_GuidHigh: 6908549268066212284
+    m_SerializedTextureGuid:
+      m_GuidLow: 15984443056978769716
+      m_GuidHigh: 2720761527419604424
+    m_Size: {x: 0.0267, y: 0.0267}
+    m_SpecifySize: 1
+    m_Name: ThirdFloor
+    m_Texture: {fileID: 0}
