@@ -47,13 +47,14 @@ The hardware component aims to realize the functions outlined in the introductio
 ### 3.2 Components & Connections
 
 The hardware uses two buttons for input, a motor-driven rotary table, an LCD screen, and LEDs. The Arduino Uno WiFi Rev2 is chosen for processing. 
+
+
 ![Picture4](https://github.com/ChenRuan/Group2_SDV/assets/146268411/514acc5f-bc9b-4c05-9314-17947b2c3c21)
 
 
 ### 3.3 Programming
 
 The program flowchart involves users selecting floors and rooms, connecting to the MQTT server, and displaying room data. The turntable displays QR codes as the user's floor changes, linked to digital end models.
-<img width="420" alt="Picture5" src="https://github.com/ChenRuan/Group2_SDV/assets/146268411/b0d1f87d-f53a-4d36-8fc6-74e3d7c6e955">
 
 
 ### 3.4 Enclosure and Assembly 
@@ -91,7 +92,6 @@ The augmented digital twin enhances user access to floor information. Users scan
 ### 4.2 Digital Assets
 
 The 3D model creation involves Photoshop for alignment, AutoCAD for line drawings, and SketchUp for 3D models. The model is exported to Unity for augmented reality operations.
-![image](https://github.com/ChenRuan/Group2_SDV/assets/146268411/98e16545-707d-4941-a095-f392daffd5d6)
 
 
 ### 4.3 Unity Development
