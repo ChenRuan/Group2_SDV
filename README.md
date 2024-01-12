@@ -1,6 +1,3 @@
-# SmartSeat Tracker
-BIM OPS: UCL Operational Building Data Research
-
 # BIM OPS: Operational Building Data Research at UCL
 
 ## 1. Introduction
@@ -94,6 +91,11 @@ Developed Unity twins for temperature data, seat occupancy, and user interaction
 ![Digital Twin Demonstration](images/digital_twin_demo.png)
 
 ### 5. Conclusion
+
+The project successfully achieved data visualization for building environments. Future improvements include server-based data processing, enhanced room selection in the digital device, showcasing available lighting, and configuring mobile apps for multiple platforms.
+
+Feel free to reach out for any questions or collaborations!
+
 
 The project successfully achieved data visualization for building environments. Future improvements include server-based data processing, enhanced room selection in the digital device, showcasing available lighting, and configuring mobile apps for multiple platforms.
 
