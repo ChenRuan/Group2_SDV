@@ -64,13 +64,13 @@ The program flowchart involves users selecting floors and rooms, connecting to t
 The enclosure, designed on paper, includes a Wire Storage and Operation box (Fusion 360). Laser cutting and 3D printing were used for production.
 ![5ed1622e1a3353c891e2bf2160274ee](https://github.com/ChenRuan/Group2_SDV/assets/146268411/2b1c98af-2527-4286-9f76-10c2cb21b242)
 
-Wires and diodes were managed during the prototype stage (Fig. 3-9 and Fig. 3-10), and components were assembled (Fig. 3-11 and Fig. 3-12).
+Wires and diodes were managed during the prototype stage and components were assembled 
 ![cfbea4ac4e3b24c313f2fdbedc4968b](https://github.com/ChenRuan/Group2_SDV/assets/146268411/63dfd71a-a3ca-412b-a7cb-4232b7e141d1)
 ![b2e8b506b7a706bcfe07f924afde83b](https://github.com/ChenRuan/Group2_SDV/assets/146268411/b30287bb-6cee-4b05-9a48-7050ad79ba2b)
 
 ## 3.5 Finished Device
 
-The finished physical device (Fig. 3-13) successfully includes:
+The finished physical device successfully includes:
 1. Turntable with QR codes for Unity link.
 2. LCD1602 for floor, room, seat, and temperature information.
 3. Buttons for floor/room selection.
