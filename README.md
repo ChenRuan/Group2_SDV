@@ -8,15 +8,14 @@ The BIM OPS project is dedicated to researching Operational Building Data at UCL
 
 ![022-one-pool-street-lifschutz-davidson-sandilands-960x640](https://github.com/ChenRuan/Group2_SDV/assets/146268411/2db63ae2-bdd1-4c09-bfb4-0ddbca810246)
 
-1.2 Project Objective
 After preliminary research and discussions, a clear direction has been established for the project. The primary objective is to boost the efficiency of workstation usage and enhance the overall utilization of learning and working spaces within the OPS building.
 
 The project aims to achieve this by analyzing peak usage periods, identifying popular seating areas, and utilizing real-time data from sensor-connected workstations. This data will be instrumental in improving seating layouts and providing accurate environmental information for user comfort.
 
-**Target Users:
+**Target Users:**
 The system is designed to serve both students and faculty members. Students can easily locate and access available study spaces, enhancing their learning experience. Faculty members, in turn, benefit from streamlined discovery and reservation of spaces for meetings or teaching activities, optimizing workflow and resource utilization.
 
-**Placement:
+**Placement:**
 The prototype will be deployed in the One Pool Street Building, strategically positioned in central or high-traffic areas within the UCL OPS campus. This placement ensures maximum accessibility for both students and faculty members
 
 ## 2. Data Source
